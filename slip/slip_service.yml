@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: slip-service
+  labels:
+    app: slip-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: slip-service
+  template:
+    metadata:
+      labels:
+        app: slip-service
+    spec:
+      containers:
+      - name: slip-service
+        image: httpsantos/slip_service:final
+        ports:
+        - containerPort: 7001
+        env:
+          - name: RABBIT_HOST
+            value: broker
+          - name: RABBIT_PORT
+            value: "5672"
+          - name: RABBIT_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: rabbit-user
+                key: username
+          - name: RABBIT_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: rabbit-user
+                key: password
