@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: slip-service
-        image: httpsantos/slip_service:final
+        image: httpsantos/slip_service:1.0
         ports:
         - containerPort: 7001
         env:
