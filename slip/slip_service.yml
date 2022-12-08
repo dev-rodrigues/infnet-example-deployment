@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: slip-service
-        image: httpsantos/slip_service:1.0
+        image: httpsantos/slip_service:2.0
         ports:
-        - containerPort: 8081
+        - containerPort: 7001
         env:
           - name: RABBIT_HOST
             value: broker
