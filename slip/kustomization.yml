@@ -2,3 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - slip_service.yml
+images:
+  - name: slip_service
+    newName: httpsantos/slip_service
+    newTag: 2.1
