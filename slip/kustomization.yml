@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
   - slip_service.yml
 images:
-  - name: slip-service
+  - name: slipservice
     newName: httpsantos/slip_service
     newTag: 2.1

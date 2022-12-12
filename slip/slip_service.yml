@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: slip-service
-        image: slip-service
+        image: slipservice
         ports:
         - containerPort: 7001
         env:
