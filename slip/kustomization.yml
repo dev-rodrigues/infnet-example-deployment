@@ -5,4 +5,4 @@ resources:
 images:
   - name: slipservice
     newName: httpsantos/slip_service
-    newTag: "2.3"
+    newTag: "2.4"
