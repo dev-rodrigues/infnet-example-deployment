@@ -4,3 +4,7 @@ resources:
   - payment_orchestrator.yml
   - orchestrator-ingress.yaml
   - orchestrator-service.yaml
+images:
+  - name: paymentorchestrator
+    newName: httpsantos/slip_service
+    newTag: "2.3"
