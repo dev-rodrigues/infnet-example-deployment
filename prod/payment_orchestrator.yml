@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: payment-orchestrator
-        image: paymentorchestrator
+        image: httpsantos/payment_orchestrator:2.3
         ports:
         - containerPort: 8081
         env:
@@ -34,4 +34,5 @@ spec:
               secretKeyRef:
                 name: rabbit-user
                 key: password
+
 
