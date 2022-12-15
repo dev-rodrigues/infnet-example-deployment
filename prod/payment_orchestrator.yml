@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: payment-orchestrator
-        image: httpsantos/payment_orchestrator:2.4
+        image: httpsantos/payment_orchestrator:2.9
         ports:
         - containerPort: 8081
         env:
